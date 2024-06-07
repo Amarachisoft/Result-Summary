@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- output css -->
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Responsive design with tailwind</title>
+  </head>
+  <body class="bg-slate-300">
+    <!-- xl -- extra large screen
+    lg -- large screen
+    md -- medium size
+    sm small screen -->
+
+    <!-- for screen sizes starting from 768px and above, apply the current style -->
+    <div class="m-96 flex md:flex-col-reverse">
+      <div class="bg-blue-700 h-[55vh] w-[30vw] text-white">
+        <h2 class="font-bold opacity-35 text-center py-10">Your Result</h2>
+        <div class="text-center p-2 rounded-full">
+          <div
+            class="flex flex-col items-center justify-center bg-blue-800 w-32 h-32 m-auto rounded-full p-5"
+          >
+            <p class="font-bold text-5xl text-white">76</p>
+            <p class="opacity-35 text-white">of 100</p>
+          </div>
+        </div>
+        <h1 class="font-bold text-xl text-center pt-16 pb-5">Great</h1>
+        <p class="text-center opacity-35">
+          You scored higher than 65% of <br />
+          the people who have taken <br />
+          these test
+        </p>
+      </div>
+
+      <div class="bg-white h-[55vh] w-[30vw] p-5 gap-5">
+        <h1 class="font-bold text-slate-600 pb-5">Summary</h1>
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between bg-red-100 p-5 rounded-lg shadow-lg">
+            <p>
+              <i class="fa-solid fa-bolt"></i>
+              <span class="text-red-500 opacity-35">Reaction</span>
+            </p>
+            <p>80<span class="opacity-35">/100</span></p>
+          </div>
+
+          <div
+            class="flex justify-between bg-yellow-100 p-5 rounded-lg shadow-lg"
+          >
+            <p>
+              <i class="fa-solid fa-brain"></i
+              ><span class="text-yellow-500 opacity-35">Memory</span>
+            </p>
+            <p>92<span class="opacity-35">/100</span></p>
+          </div>
+
+          <div class="flex justify-between bg-green-100 p-5">
+            <p>
+              <i class="fa-regular fa-comment"></i
+              ><span class="text-green-500 opacity-35">Verbal</span>
+            </p>
+            <p>61<span class="opacity-35">/100</span></p>
+          </div>
+
+          <div class="flex justify-between bg-purple-100 p-5 rounded">
+            <p>
+              <i class="fa-regular fa-eye"></i
+              ><span class="text-purple-500 opacity-35">Visual</span>
+            </p>
+            <p class="gap-y-0">72<span class="opacity-35">/100</span></p>
+          </div>
+          <button
+            class="bg-blue-900 items-center p-5 w-600 font-bold rounded-full shadow-lg"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
